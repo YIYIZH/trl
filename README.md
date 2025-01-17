@@ -6,27 +6,42 @@
 
 
 ## Installation
-Our code is built upon TRL. Please follow the https://github.com/huggingface/trl.git for pre installation.
+Our code is built upon TRL. Please follow the https://github.com/huggingface/trl.git for pre-installation.
 
 ## Quick Start
 
 **SFT:**
 
 ```bash
-trl sft --model_name_or_path facebook/opt-125m --dataset_name imdb --output_dir opt-sft-imdb
+accelerate launch trl/examples/research_projects/chemical_dpo/scripts/sft_llama2.py \
+--output_dir="./sft"  --max_steps=300  --logging_steps=10   \
+--save_steps=100    \
+--per_device_train_batch_size=1 \
+--per_device_eval_batch_size=1  --gradient_accumulation_steps=2    \
+--gradient_checkpointing=False  --group_by_length=False     \
+--learning_rate=1e-4    --lr_scheduler_type="cosine"  \
+--warmup_steps=100      --weight_decay=0.05 \
+--optim="paged_adamw_32bit"     --bf16=True   \
+--remove_unused_columns=False  \
+--run_name="sft_llama2"     \
+--report_to="wandb"
 ```
 
 **DPO:**
 
 ```bash
-trl dpo --model_name_or_path facebook/opt-125m --dataset_name trl-internal-testing/hh-rlhf-helpful-base-trl-style --output_dir opt-sft-hh-rlhf 
+accelerate launch trl/examples/research_projects/chemical_dpo/scripts/dpo_llama2.py \
+	--model_name_or_path="sft/final_checkpoint" 
 ```
 
 **Merge:**
 
 ```bash
-trl chat --model_name_or_path Qwen/Qwen1.5-0.5B-Chat
+python trl/examples/research_projects/stack_llama/scripts/merge_peft_adapter.py --base_model_name="meta-llama/Llama-2-7b-hf" --adapter_model_name="dpo_results/final_checkpoint/" --output_name="stack-llama-2-smiles"
 ```
+
+**Evaluation:**
+
 
 ## References
 
