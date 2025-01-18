@@ -2,8 +2,8 @@
 <img src="https://github.com/YIYIZH/trl/blob/main/frame.png">
 </div>
 
-# Official Implement of LibraAlign -- The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?
-
+# Official Implement of LibraAlign
+# The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?
 
 ## Installation
 Our code is built upon TRL. Please follow the https://github.com/huggingface/trl.git for pre-installation.
