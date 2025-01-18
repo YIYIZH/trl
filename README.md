@@ -1,11 +1,6 @@
 <div style="text-align: center">
-<img src="https://github.com/YIYIZH/trl/blob/main/frame.pdf">
+<img src="https://github.com/YIYIZH/trl/blob/main/frame.png">
 </div>
-<object data="https://github.com/YIYIZH/trl/blob/main/frame.pdf" type="application/pdf" width="700px" height="300px">
-    <embed src="https://github.com/YIYIZH/trl/blob/main/frame.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/YIYIZH/trl/blob/main/frame.pdfcom/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
 
 # Official Implement of LibraAlign -- The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?
 
@@ -54,7 +49,7 @@ python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # you may
 **Evaluation:**
 
 ```bash
-python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # you may need to change the related paths in the file
+python trl/examples/research_projects/chemical_dpo/scripts/dpo_evaluate.py # you may need to change the related paths in the file
 ```
 
 ## References
