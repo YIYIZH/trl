@@ -1,8 +1,8 @@
 <div style="text-align: center">
-<img src="https://huggingface.co/datasets/trl-internal-testing/example-images/resolve/main/images/trl_banner_dark.png">
+<img src="https://github.com/YIYIZH/trl/blob/main/frame.pdf">
 </div>
 
-# Official Impliment of LibraAlign
+# Official Implement of LibraAlign -- The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?
 
 
 ## Installation
@@ -40,12 +40,19 @@ accelerate launch trl/examples/research_projects/chemical_dpo/scripts/dpo_llama2
 python trl/examples/research_projects/stack_llama/scripts/merge_peft_adapter.py --base_model_name="meta-llama/Llama-2-7b-hf" --adapter_model_name="dpo_results/final_checkpoint/" --output_name="stack-llama-2-smiles"
 ```
 
+**Inference:**
+
+、、、bash
+python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # you may need to change the related paths in the file
+、、、
+
 **Evaluation:**
 
+、、、bash
+python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # you may need to change the related paths in the file
+、、、
 
 ## References
-
-### TRL
 
 ### Proximal Policy Optimisation
 The PPO implementation largely follows the structure introduced in the paper **"Fine-Tuning Language Models from Human Preferences"** by D. Ziegler et al. \[[paper](https://huggingface.co/papers/1909.08593), [code](https://github.com/openai/lm-human-preferences)].
