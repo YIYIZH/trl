@@ -7,9 +7,13 @@
 ## Official Implement of LibraAlign
 
 ## Installation
-Our code is built upon TRL. Please follow the https://github.com/huggingface/trl.git for pre-installation.
+Our code is built upon TRL. Please follow https://github.com/huggingface/trl.git for pre-installation.
 
 ## Quick Start
+
+**Data:**
+
+Our training and testing datasets are released at https://huggingface.co/datasets/frisky11/LibraChem.
 
 **SFT:**
 
