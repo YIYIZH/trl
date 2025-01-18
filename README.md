@@ -7,7 +7,7 @@
 ## Official Implement of LibraAlign
 
 ## Installation
-Our code is built upon TRL. Please follow https://github.com/huggingface/trl.git for pre-installation.
+Our code is built upon TRL on a single GeForce RTX 3090. Please follow https://github.com/huggingface/trl.git for pre-installation. 
 
 ## Quick Start
 
