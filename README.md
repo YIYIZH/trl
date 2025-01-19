@@ -47,9 +47,12 @@ python trl/examples/research_projects/stack_llama/scripts/merge_peft_adapter.py 
 
 **Inference:**
 
+***Test our method:***
 ```bash
 python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # you may need to change the related paths in the file
 ```
+
+***Test existing LLMs:***
 ```bash
 run trl/examples/research_projects/chemical_dpo/scripts/baseline_test.ipynb in Jupyter Notebook (Colab)
 ```
