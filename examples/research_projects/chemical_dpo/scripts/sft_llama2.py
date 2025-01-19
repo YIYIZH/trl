@@ -25,9 +25,8 @@ from trl.trainer import ConstantLengthDataset
 @dataclass
 class ScriptArguments:
     model_name: Optional[str] = field(default="meta-llama/Llama-2-7b-hf", metadata={"help": "the model name"})
-    #dataset_name: Optional[str] = field(default="Afterglow777/chemical_dpo_exp_dataset", metadata={"help": "the dataset name"})
     #subset: Optional[str] = field(default="exp/exp_rephrase_bias/8-8-1/data/train", metadata={"help": "the subset to use"})
-    dataset_name: Optional[str] = field(default="frisky11/SmartChemQA", metadata={"help": "the dataset name"})
+    dataset_name: Optional[str] = field(default="frisky11/LibraChem", metadata={"help": "the dataset name"})
     subset: Optional[str] = field(default="bs/316-632/train", metadata={"help": "the subset to use"})
     split: Optional[str] = field(default="train", metadata={"help": "the split to use"})
     size_valid_set: Optional[int] = field(default=400, metadata={"help": "the size of the validation set"})
