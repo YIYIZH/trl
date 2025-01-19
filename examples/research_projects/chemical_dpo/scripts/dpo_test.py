@@ -43,15 +43,10 @@ def generate_test_data(samples):
     return new_examples
 
 test_dataset = load_dataset(
-    "frisky11/SmartChemQA",
+    "frisky11/LibraChem",
     split="train",
-    data_files="test/dataset_smiles_632632_test.parquet"
+    data_files="SMILES/test/dataset_smiles_632632_test.parquet"
 )
-# test_dataset = load_dataset(
-#     "Afterglow777/chemical_dpo_dataset2",
-#     split="test",
-#     data_dir="data/test"
-# )
 original_columns = test_dataset.column_names
 test_ds = test_dataset.map(
     generate_test_data,
