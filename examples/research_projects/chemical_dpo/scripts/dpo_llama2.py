@@ -107,10 +107,9 @@ def get_stack_exchange_paired(
       "Question: " + <prompt> + "\n\nAnswer: "
     """
     dataset = load_dataset(
-        #"Afterglow777/chemical_dpo_exp_dataset",
-        "frisky11/SmartChemQA",
+        "frisky11/LibraChem",
         split="train",
-        data_files="bs/316-632/train/dataset_smiles_316632_555_train.parquet",
+        data_files="SMILES/train/dataset_smiles_316632_555_train.parquet",
         cache_dir=cache_dir,
         #data_dir=data_dir,
     )
