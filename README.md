@@ -75,5 +75,10 @@ DPO is based on the original implementation of **"Direct Preference Optimization
 ## Citation
 
 ```bibtex
-
+@article{zhang2025dual,
+  title={The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?},
+  author={Zhang, Yiyi and Chen, Xingyu and Chen, Kexin and Du, Yuyang and Dang, Xilin and Heng, Pheng-Ann},
+  journal={arXiv preprint arXiv:2501.13952},
+  year={2025}
+}
 ```
