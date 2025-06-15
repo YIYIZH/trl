@@ -45,20 +45,20 @@ You can also download our trained SFT models from here.
 accelerate launch trl/examples/research_projects/chemical_dpo/scripts/dpo_llama2.py \
 	--model_name_or_path="sft/final_checkpoint" 
 ```
-You can also download our trained DPO models from here.
+You can also download our trained DPO models from here and replace the model_name_or_path with your real path.
 
 **Merge:**
 
 ```bash
 python trl/examples/research_projects/stack_llama/scripts/merge_peft_adapter.py --base_model_name="meta-llama/Llama-2-7b-hf" --adapter_model_name="dpo_results/final_checkpoint/" --output_name="stack-llama-2-smiles"
 ```
-You can also download the merged models in TEXT or SMILES mode.
+You can also download the merged models in TEXT or SMILES mode and replace the adapter_model_name with your real path.
 
 ## Inference
 
 ***Test our method:***
 ```bash
-python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # Please replace the model path with your real path.
+python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # Please replace the model path with the real path of your DPO models.
 ```
 
 ***Test existing LLMs:***
