@@ -52,7 +52,7 @@ You can also download our trained DPO models from here and replace the model_nam
 ```bash
 python trl/examples/research_projects/stack_llama/scripts/merge_peft_adapter.py --base_model_name="meta-llama/Llama-2-7b-hf" --adapter_model_name="dpo_results/final_checkpoint/" --output_name="stack-llama-2-smiles"
 ```
-You can also download the merged models in TEXT or SMILES mode and replace the adapter_model_name with your real path.
+You can also download the merged models in [TEXT](https://huggingface.co/frisky11/stack-llama-2) or SMILES mode and replace the adapter_model_name with your real path.
 
 ## Inference
 
