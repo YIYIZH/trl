@@ -6,7 +6,7 @@
 
 ## Official Implement of LibraAlign
 
-Our code is built upon TRL on a single GeForce RTX 3090. The oprating system is Ubuntu 20.04.6 LTS 
+Our code is built upon TRL on a single GeForce RTX 3090. The oprating system is Ubuntu 20.04.6 LTS.
 
 ## Installation
 ```bash
@@ -58,7 +58,7 @@ You can also download the merged models in TEXT or SMILES mode.
 
 ***Test our method:***
 ```bash
-python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # you may need to change the related paths in the file
+python trl/examples/research_projects/chemical_dpo/scripts/dpo_test.py # Please replace the model path with your real path.
 ```
 
 ***Test existing LLMs:***
@@ -71,6 +71,10 @@ run trl/examples/research_projects/chemical_dpo/scripts/baseline_test.ipynb in J
 ```bash
 run trl/examples/research_projects/chemical_dpo/scripts/accuracy.ipynb in Jupyter Notebook (Colab)
 ```
+
+## Demo
+**Test cases**
+**Expected output**
 
 ## References
 
