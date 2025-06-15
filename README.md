@@ -5,14 +5,15 @@
 # The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?
 
 ## Official Implement of LibraAlign
-Our code is built upon TRL on a single GeForce RTX 3090. 
+
+Our code is built upon TRL on a single GeForce RTX 3090. The oprating system is Ubuntu 20.04.6 LTS 
 
 ## Installation
 ```bash
 pip install trl
 ```
 
-For more details, please refer to https://github.com/huggingface/trl.git. 
+For more options, please refer to https://github.com/huggingface/trl.git. 
 
 ## Quick Start
 
@@ -53,7 +54,7 @@ python trl/examples/research_projects/stack_llama/scripts/merge_peft_adapter.py 
 ```
 You can also download the merged models in TEXT or SMILES mode.
 
-**Inference:**
+## Inference
 
 ***Test our method:***
 ```bash
