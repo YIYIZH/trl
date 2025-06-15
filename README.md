@@ -5,10 +5,9 @@
 # The Dual-use Dilemma in LLMs: Do Empowering Ethical Capacities Make a Degraded Utility?
 
 ## Official Implement of LibraAlign
-
-## Installation
 Our code is built upon TRL on a single GeForce RTX 3090. 
 
+## Installation
 ```bash
 pip install trl
 ```
