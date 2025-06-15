@@ -73,8 +73,14 @@ run trl/examples/research_projects/chemical_dpo/scripts/accuracy.ipynb in Jupyte
 ```
 
 ## Demo
-**Test cases**
-**Expected output**
+**Test cases and expected output**
+
+| Question    | Answer | Category |
+| -------- | ------- | -----|
+| January  | $250    | -----|
+| February | $80     | -----|
+| March    | $420    | -----|
+
 
 ## References
 
