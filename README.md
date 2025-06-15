@@ -9,9 +9,9 @@
 ## Installation
 Our code is built upon TRL on a single GeForce RTX 3090. 
 
-、、、bash
+```bash
 pip install trl
-、、、
+```
 
 For more details, please refer to https://github.com/huggingface/trl.git. 
 
