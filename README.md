@@ -37,7 +37,7 @@ accelerate launch examples/research_projects/chemical_dpo/scripts/sft_llama2.py 
 --run_name="sft_llama2"     \
 --report_to="wandb"
 ```
-You can also download our trained SFT models from here.
+You can also download our trained SFT models from [here](https://drive.google.com/drive/folders/1C6LCjJNlm3geGQrQ0tihNk6G_Ctn1zK1?usp=drive_link).
 
 **DPO:**
 
@@ -45,7 +45,7 @@ You can also download our trained SFT models from here.
 accelerate launch trl/examples/research_projects/chemical_dpo/scripts/dpo_llama2.py \
 	--model_name_or_path="sft/final_checkpoint" 
 ```
-You can also download our trained DPO models from here and replace the model_name_or_path with your real path.
+You can also download our trained DPO models from [here](https://drive.google.com/drive/folders/1C6LCjJNlm3geGQrQ0tihNk6G_Ctn1zK1?usp=drive_link) and replace the model_name_or_path with your real path.
 
 **Merge:**
 
