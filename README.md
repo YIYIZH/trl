@@ -23,7 +23,7 @@ Our training and testing datasets are released at https://huggingface.co/dataset
 **SFT:**
 
 ```bash
-accelerate launch trl/examples/research_projects/chemical_dpo/scripts/sft_llama2.py \
+accelerate launch examples/research_projects/chemical_dpo/scripts/sft_llama2.py \
 --output_dir="./sft"  --max_steps=300  --logging_steps=10   \
 --save_steps=100    \
 --per_device_train_batch_size=1 \
